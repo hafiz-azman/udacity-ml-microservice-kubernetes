@@ -6,8 +6,8 @@ WORKDIR /app
 
 ## Step 2:
 # Copy source code to working directory
-COPY . udacity-ml-microservice-kubernetes/app.py /app/
-COPY . udacity-ml-microservice-kubernetes/model_data/* /app/model_data/
+COPY . app.py /app/
+COPY . model_data/* /app/model_data/
 
 ## Step 3:
 # Install packages from requirements.txt
