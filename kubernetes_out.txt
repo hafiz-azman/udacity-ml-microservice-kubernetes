@@ -1,3 +1,5 @@
+./run_kubernetes.sh output:
+
 kubectl run --generator=deployment/apps.v1 is DEPRECATED and will be removed in a future version. Use kubectl run --generator=run-pod/v1 or kubectl create instead.
 Error from server (AlreadyExists): deployments.apps "udacity-ml-microservice" already exists
 NAME                                      READY   STATUS    RESTARTS   AGE
@@ -5,3 +7,13 @@ udacity-ml-microservice-795db64dc-bd4qz   1/1     Running   0          11m
 Forwarding from 127.0.0.1:8000 -> 80
 Forwarding from [::1]:8000 -> 80
 Handling connection for 8000
+
+
+./make_prediction.sh output:
+
+Port: 8000
+{
+  "prediction": [
+    20.35373177134412
+  ]
+}
